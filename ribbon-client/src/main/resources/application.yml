@@ -1,0 +1,10 @@
+#模拟缓存服务信息列表
+stores:
+  ribbon:
+    listOfServers:  example.com,google.com
+#   禁止调用eureka-client获取注册列表
+ribbon:
+  eureka:
+    enabled:  false
+server:
+  port: 8769

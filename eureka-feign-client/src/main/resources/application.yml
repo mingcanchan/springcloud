@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: eureka-feign-client
+server:
+  port: 8765
+eureka:
+  client:
+    service-url: #服务注册地址
+      defaultZone:  http://localhost:8761/eureka/
+#      开启hystrix 熔断机制,feign已有hystrix依赖
+feign:
+  hystrix:
+    enabled: true
